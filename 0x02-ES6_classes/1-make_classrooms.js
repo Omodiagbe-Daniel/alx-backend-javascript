@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
   Implement a function named initializeRooms
-B  It should return an array of 3 ClassRoom objects
+  It should return an array of 3 ClassRoom objects
   with the sizes 19, 20, and 34 (in this order)
 */
 

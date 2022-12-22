@@ -47,7 +47,7 @@ export default class HolbertonCourse {
 
   set students(valu = []) {
     if (valu !== 'object') {
-      throw TypeError('Students must be an array');
+      throw TypeError('Students must be an array of strings');
     }
     this._students = valu;
   }
