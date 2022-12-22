@@ -7,8 +7,24 @@ import Currency from './3-currency';
 
 export default class Pricing {
   constructor(amount, currency = new Currency('', '')) {
-    this._amount = amount;
-    this._currency = currency;
+    this.amount = amount;
+    this.currency = currency;
+  }
+
+  set amount(val) {
+    this._amount = val;
+  }
+
+  get amount() {
+    return this._amount;
+  }
+
+  set currency(val) {
+    this._currency = val;
+  }
+
+  get currency() {
+    return this._currency;
   }
 
   displayFullPrice() {
