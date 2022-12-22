@@ -1,4 +1,3 @@
-#!/usr/bin/node
 /*
   Implement a class named Pricing
 */
