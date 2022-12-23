@@ -49,6 +49,11 @@ export default class HolbertonCourse {
     if (valu !== 'object') {
       throw TypeError('Students must be an array of strings');
     }
+    for (const ele in valu) {
+      if (typeof ele !== 'string') {
+        throw TypeError('Students must be an array of strings');
+      }
+    }
     this._students = valu;
   }
 
