@@ -4,7 +4,7 @@ export default function cleanSet(set, startString) {
     return ('');
   }
   for (const item of set) {
-    if (item.includes(startString)) {
+    if (item.startsWith(startString)) {
       const newStr = item.replace(startString, '');
       str.push(newStr);
     }
