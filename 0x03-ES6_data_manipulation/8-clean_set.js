@@ -5,9 +5,11 @@ export default function cleanSet(set, startString) {
   }
   for (const item of set) {
     let newStr = '';
-    if (item.startsWith(startString)) {
-      newStr = item.replace(startString, '');
-      str.push(newStr);
+    if (typeof (item) === 'string') {
+      if (item.startsWith(startString)) {
+        newStr = item.replace(startString, '');
+        str.push(newStr);
+      }
     }
   }
   return str.join('-');
